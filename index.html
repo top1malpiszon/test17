@@ -13,8 +13,8 @@
         body {
             background-color: #1d3600;
             background-image:
-                radial-gradient(circle at 100% 100%, transparent 10%, #4d6e27 15%, #4d6e27 20%, #7aba30 30%, transparent 45%),
-                radial-gradient(circle at 0% 0%, transparent 10%, #4d6e27 15%, #4d6e27 20%, #7aba30 30%, transparent 45%);
+                radial-gradient(circle at 100% 100%, transparent 10%, #1d3600 15%, #1d3600 20%, #7aba30 30%, transparent 45%),
+                radial-gradient(circle at 0% 0%, transparent 10%, #1d3600 15%, #1d3600 20%, #7aba30 30%, transparent 45%);
             background-size: 200% 200%;
             background-position: 50% 50%;
             animation: ocean-waves 12s ease-in-out infinite alternate;
@@ -415,6 +415,18 @@
             border-radius: 1px;
             opacity: 0.8;
         }
+        
+        /* New class for the separators around the streams */
+        .stream-separator {
+            width: 100%;
+            max-width: 850px; /* Adjusting to match the streams container width (400px + 400px + 50px gap) */
+            height: 2px;
+            background-image: linear-gradient(to right, rgba(137, 255, 0, 0.3), #89ff00, rgba(137, 255, 0, 0.3));
+            margin: 40px auto;
+            border-radius: 1px;
+            opacity: 0.8;
+        }
+
 
         .social-separator {
             width: 100%;
@@ -607,7 +619,7 @@
                 <div class="link-loading-bar"></div>
             </a>
         </main>
-        <div class="section-separator"></div>
+        <div class="stream-separator"></div>
         <div class="streams-container">
             <div class="stream-container">
                 <div class="stream-header">
@@ -630,8 +642,8 @@
                 </div>
             </div>
         </div>
-        <div class="section-separator"></div>
-        <footer style="margin-top:40px; font-size:11px; color:#89ff00; text-align:center; line-height:1.4; opacity:0.8;">
+        <div class="stream-separator"></div>
+        <footer style="margin-top:40px; font-size:11px; color:#A0A0A0; text-align:center; line-height:1.4; opacity:0.8;">
             <strong>⚠️ GRAJ ODPOWIEDZIALNIE! ⚠️</strong><br>
             Strona zawiera linki do zewnętrznych serwisów. Korzystanie z nich odbywa się na własną odpowiedzialność i powinno być zgodne z obowiązującym prawem w Twoim kraju. Nie promujemy działań nielegalnych i nie zachęcamy do działań niezgodnych z prawem i nie ponosimy odpowiedzialności za konsekwencje wynikające z korzystania z tych stron.
             <br><br>
